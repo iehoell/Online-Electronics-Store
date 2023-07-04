@@ -1,0 +1,43 @@
+.Header{
+  background-color: #141414;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  color: #999999;
+  a{
+    text-decoration: none;
+    color: #999999;
+    vertical-align: middle;
+  }
+  a:hover{
+    color: white;
+  }
+  .header__productTitle{
+    margin: 14px 5px 20px 5px;
+  }
+  .header__telephoneNumber{
+    margin: 14px 5px 20px 5px;
+  }
+  .header__telephoneNumber:hover{
+    color: white;
+  }
+    .header__typesOfProducts{
+      display: flex;
+      justify-content: space-between;
+        .header__typesOfProducts__production{
+          margin: 14px 5px 20px 5px;
+        }
+        .header__typesOfProducts__PCs{
+          margin: 14px 5px 20px 5px;
+        }
+        .header__typesOfProducts__mobileDevices{
+          margin: 14px 5px 20px 5px;
+        }
+        .header__typesOfProducts__consoles{
+          margin: 14px 5px 20px 5px;
+        }
+    }
+}

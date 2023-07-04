@@ -1,0 +1,78 @@
+.Footer{
+  background-color: #141414;
+  color: #FFFFFF;
+  width: 100%;
+  bottom: 0;
+  flex: 0 0 auto;
+  a{
+    text-decoration: none;
+    color: #999999;
+  }
+  a:hover{
+    color: white;
+  }
+  .copyright{
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  ul{
+    margin: 0;
+    padding:0;
+  }
+  li{
+    color: #999999;
+    list-style-type: none;
+    margin-top: 5px;
+  }
+  h5{
+    color: #FFFFFF;
+  }
+  .Footer__footerContainers{
+    display: flex;
+    justify-content: space-around;
+    .Footer__footerContainers__company{
+      width:33vh;
+    }
+    .Footer__footerContainers__buyers{
+      width:33vh;
+    }
+    .Footer__footerContainers__connection{
+      width:33vh;
+      color: #999999;
+      .text-field__icon {
+        position: relative;
+      }
+      .text-field__icon::before {
+        content: '';
+        color: #999999;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        left: 0.625rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .text-field__icon .text-field__input {
+        padding-left: 2rem;
+      }
+      .text-field__icon_email::before {
+        content: '@';
+      }
+      .text-field__input{
+        border-radius: 5px;
+        outline: none;
+        width: 90%;
+      }
+      .Footer__footerContainers__connection__licenseAgreement{
+          font-size: 10px;
+          a{
+            color: #0D61AF;
+            text-decoration: none;
+          }
+      }
+    }
+  }
+}
