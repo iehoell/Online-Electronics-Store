@@ -1,0 +1,181 @@
+.ProductPage{
+  margin: 15vh 20vh 5vh 16vh;
+  canvas{
+    height: 300px;
+    width: 600px;
+  }
+  .productPage__main-container{
+    width: 103%;
+    border: solid 1px #D3D3D3;
+    border-radius: 5px;
+    display: flex;
+    background-color: #FFFFFF;
+    .productPage__main-container__photos{
+      margin-left: 5vh;
+      img{
+        height: 400px;
+        width: 400px;
+      }
+      }
+    .productPage__main-container__product-info{
+      margin-left: 10vh;
+      margin-right: 5vh;
+      .lastName{
+        margin: 3vh 0 3vh 0;
+        font-size: 20px;
+      }
+      .productPage__main-container__product-info__infoAbout{
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 10px #999999;
+      }
+      .productPage__main-container__product-info__price{
+        display: flex;
+      }
+      .productPage__main-container__product-info__price__delivery{
+        margin-top: 3vh;
+        display: flex;
+        .inStock{
+          background-color: #D3D3D3;
+          margin-left: 3vh;
+          border-radius: 5px;
+          padding: 2px;
+          box-shadow: 0 0 10px #999999;
+        }
+        .pickUpPoints{
+          background-color: #D3D3D3;
+          margin-left: 3vh;
+          margin-right: 3vh;
+          border-radius: 5px;
+          padding: 2px;
+          box-shadow: 0 0 10px #999999;
+        }
+        .deliveryToHome{
+          background-color: #D3D3D3;
+          margin-right: 3vh;
+          border-radius: 5px;
+          padding: 2px;
+          box-shadow: 0 0 10px #999999;
+        }
+      }
+        .productPage__main-container__product-info__priceBar{
+          border-radius: 5px;
+          box-shadow: 0 0 10px #999999;
+          background-color: #D3D3D3;
+          display: flex;
+          justify-content: space-between;
+          margin-left: 3vh;
+          h3{
+            width: 40vh;
+          }
+          .priceGraphic{
+            background-color: #D3D3D3;
+            width: 40px;
+            height: 40px;
+            border: none;
+          }
+        }
+        .favourites{
+          border: none;
+          margin-left: 5vh;
+          height: 40px;
+          width: 40px;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 0 10px #999999;
+        }
+        .buyButton{
+          margin-left: 1vh;
+          margin-right: 5vh;
+          background-color: #FFFFFF;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0 5px #999999;
+          width: 130px;
+          height: 40px;
+        }
+        .buyButton:hover{
+          color: #FFFFFF;
+          background-color: orange;
+        }
+    }
+  }
+  h5{
+    margin-top: 3vh;
+  }
+  .productPage__characteristics{
+    margin: 3vh 0 0 0;
+    width: 103%;
+    border: solid 1px #D3D3D3;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    h6{
+      margin: 1vh 0 3vh 3vh;
+    }
+    .commonParameters{
+      display: flex;
+      flex-direction: column;
+      .commonParameters__item{
+        margin: 0 5vh 0 3vh;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .mainParameters{
+      display: flex;
+      flex-direction: column;
+      .mainParameters__item{
+        margin: 0 5vh 0 3vh;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .videomemorySpecifications{
+      display: flex;
+      flex-direction: column;
+      .videomemorySpecifications__item {
+        margin: 0 5vh 0 3vh;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .productPage__description{
+    margin: 3vh 0 3vh 0;
+    width: 103%;
+    border: solid 1px #D3D3D3;
+    border-radius: 5px;
+    display: flex;
+    background-color: #FFFFFF;
+    #description{
+      margin: 1vh 1vh 1vh 3vh;
+    }
+  }
+}
+
+.reviewsContainer{
+  width: 103%;
+  border: solid 1px #D3D3D3;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  h6{
+    margin: 1vh 1vh 1vh 3vh;
+  }
+  b{
+    margin-left: 3vh;
+  }
+  p{
+    margin-left: 3vh;
+  }
+  svg{
+    fill: orange;
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+  .underline{
+    width: 100%;
+    height: 1px;
+    background-color: #D3D3D3;
+  }
+}
