@@ -4,10 +4,12 @@ import MainParameters from './MainParameters';
 import Reviews from './Reviews';
 import Modal from './modalBuy';
 import CarouselBox from "./components/CarouselBox";
+import Graphic from "./components/Graphic";
+
 let products = require('./mockData/products.json');
 
 function ProductPage(){
-    const [modalActive, setModalActive] = useState(false)
+    const [modalActive, setModalActive] = useState(true)
     return(
       <div className="ProductPage">
             <h3>{products.product1.type + " " + products.product1.model}
@@ -24,7 +26,7 @@ function ProductPage(){
                     <div className="productPage__main-container__product-info__price">
                         <div className="productPage__main-container__product-info__priceBar">
                             <h3>{products.product1.price}</h3>
-                            <button className="priceGraphic">гр</button>
+                            <button className="priceGraphic"><a href='#graphic' className='anchor'>гр</a></button>
                         </div>
                         <button className="favourites">3</button>
                         <button id="buyButton" className="buyButton" onClick={() => setModalActive(true)}>Купить</button>
@@ -37,9 +39,10 @@ function ProductPage(){
                   </div>
               </div>
           </div>
-          <h5>График изменения цен на товар</h5>
-          <canvas className='myChart'/>
-          <h5>Характеристики Видеокарта Palit GeForce RTX 3060 Dual (LHR) [NE63060019K9-190AD]</h5>
+          <h5 id='graphic'>График изменения цен на товар</h5>
+          <p>Выберите тип графика: </p>
+          <Graphic/>
+          <h5>Характеристики {products.product1.type} {products.product1.model} {products.product1.code}</h5>
           <MainParameters />
           <h5>Описание</h5>
           <div className="productPage__description">
@@ -48,8 +51,7 @@ function ProductPage(){
               </p>
           </div>
           <Reviews />
-          <Modal active={modalActive} setActive={setModalActive}>
-          </Modal>
+          <Modal active={modalActive} setActive={setModalActive}/>
       </div>
     );
 }
