@@ -64,7 +64,7 @@ function MainPage(){
                             <div className="content__main-container__products-list__products__product__card">
                                 <div className="content__main-container__products-list__products__product__photo">
                                     <img
-                                        src="https://c.dns-shop.ru/thumb/st1/fit/500/500/dfe4454c255090040b61cbf9b49de401/8f034774b9ef9d7f28e047ab30f3e17b5f0b9f2155d14051d03bd435db8d8667.png.webp"
+                                        src="https://c.dns-shop.ru/thumb/st4/fit/500/500/e07db22113c449a5c14d164e6662a9e4/c2dd2e62fb1eb6c13adb174d06347951d16a1d6e654b0bfec5b08a554dc848ad.jpg.webp"
                                         alt=""/>
                                 </div>
                                 <a href="/ProductPage" id="product2"
@@ -121,7 +121,7 @@ function MainPage(){
                             <div className="content__main-container__products-list__products__product__card">
                                 <div className="content__main-container__products-list__products__product__photo">
                                     <img
-                                        src="https://c.dns-shop.ru/thumb/st1/fit/500/500/3139443e502887411b3e9beabd6843f2/e67fead6e29baafb1d0d6e8a224f8641834ade0368092a07aa2a89cf86edfcca.jpg.webp"
+                                        src="https://c.dns-shop.ru/thumb/st4/fit/200/200/62bbe2aefd6cc645eabd2b5c79dc1abc/1b18760968b346e335862f38832a5b2f2b46e75bef7d41edd8f3514945fa3f35.jpg.webp"
                                         alt=""/>
                                 </div>
                                 <a href="/ProductPage" id="product5"

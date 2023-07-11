@@ -45,9 +45,9 @@ function Footer(){
                         <p className="Footer__footerContainers__connection__licenseAgreement">
                             Подписываясь на рассылку, Вы соглашаетесь
                             c условиями
-                            <a href="/policy">политики конфиденциальности</a>
+                            <a href="/policy"> политики конфиденциальности </a>
                             и
-                            <a href="/policy">политики обработки персональных данных</a>
+                            <a href="/policy"> политики обработки персональных данных</a>
                         </p>
                     </div>
                 </div>
