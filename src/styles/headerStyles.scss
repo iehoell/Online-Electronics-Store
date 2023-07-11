@@ -28,16 +28,16 @@
     .header__typesOfProducts{
       display: flex;
       justify-content: space-between;
-        .header__typesOfProducts__production{
+        .typesOfProducts__production{
           margin: 14px 5px 20px 5px;
         }
-        .header__typesOfProducts__PCs{
+        .typesOfProducts__PCs{
           margin: 14px 5px 20px 5px;
         }
-        .header__typesOfProducts__mobileDevices{
+        .typesOfProducts__mobileDevices{
           margin: 14px 5px 20px 5px;
         }
-        .header__typesOfProducts__consoles{
+        .typesOfProducts__consoles{
           margin: 14px 5px 20px 5px;
         }
     }

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import './app/styles/headerStyles.scss';
-import './app/styles/MainPage.scss';
-import './app/styles/footerStyles.scss';
-import App from './app/App';
+import './styles/headerStyles.scss';
+import './styles/MainPage.scss';
+import './styles/footerStyles.scss';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProductPage from "./app/ProductPage";
+import ProductPage from "./ProductPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

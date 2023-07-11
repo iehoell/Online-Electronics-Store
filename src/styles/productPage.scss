@@ -1,5 +1,5 @@
 .ProductPage{
-  margin: 15vh 20vh 5vh 16vh;
+  margin: 100px 20vh 40px 120px;
   .sortingSelect{
     border-color: #999999;
     border-radius: 5px;
@@ -10,33 +10,34 @@
     border-radius: 5px;
     display: flex;
     background-color: #FFFFFF;
-    .productPage__main-container__photos{
-      margin-left: 5vh;
+    .main-container__photos{
+      margin-left: 20px;
       img{
         height: 400px;
         width: 400px;
       }
       }
-    .productPage__main-container__product-info{
-      margin-left: 10vh;
-      margin-right: 5vh;
+    .main-container__product-info{
+      margin-left: 50px;
+      margin-right: 40px;
       .lastName{
         margin: 3vh 0 3vh 0;
         font-size: 20px;
       }
-      .productPage__main-container__product-info__infoAbout{
+      .product-info__infoAbout{
         background-color: #FFFFFF;
         border-radius: 10px;
         padding: 10px;
         box-shadow: 0 0 10px #999999;
       }
-      .productPage__main-container__product-info__price{
+      .product-info__price{
         display: flex;
       }
-      .productPage__main-container__product-info__price__delivery{
+      .product-info__price__delivery{
         margin-top: 3vh;
         display: flex;
         .inStock{
+          width: 33%;
           background-color: #D3D3D3;
           margin-left: 3vh;
           border-radius: 5px;
@@ -44,6 +45,7 @@
           box-shadow: 0 0 10px #999999;
         }
         .pickUpPoints{
+          width: 33%;
           background-color: #D3D3D3;
           margin-left: 3vh;
           margin-right: 3vh;
@@ -52,6 +54,7 @@
           box-shadow: 0 0 10px #999999;
         }
         .deliveryToHome{
+          width: 33%;
           background-color: #D3D3D3;
           margin-right: 3vh;
           border-radius: 5px;
@@ -59,7 +62,7 @@
           box-shadow: 0 0 10px #999999;
         }
       }
-        .productPage__main-container__product-info__priceBar{
+        .product-info__priceBar{
           border-radius: 5px;
           box-shadow: 0 0 10px #999999;
           background-color: #D3D3D3;
@@ -75,16 +78,17 @@
           }
           .priceGraphic{
             background-color: #D3D3D3;
-            width: 40px;
+            width: 60px;
             height: 40px;
             border: none;
           }
         }
         .favourites{
+          background-color: #FFFFFF;
           border: none;
           margin-left: 5vh;
-          height: 40px;
-          width: 40px;
+          height: 60px;
+          width: 60px;
           border-radius: 10px;
           padding: 10px;
           box-shadow: 0 0 10px #999999;
@@ -97,7 +101,7 @@
           border: none;
           box-shadow: 0 0 5px #999999;
           width: 130px;
-          height: 40px;
+          height: 60px;
         }
         .buyButton:hover{
           color: #FFFFFF;
@@ -190,4 +194,8 @@
 .visible{
   visibility: visible;
   height: 600px;
+}
+.favouritesImage{
+  height: 40px;
+  width: 40px;
 }

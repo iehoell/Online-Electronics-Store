@@ -1,6 +1,7 @@
 .MainPage{
   margin-top: 10vh;
   margin-bottom: 5vh;
+  width: 100%;
   a{
     text-decoration: none;
     color: #2F2F32;
@@ -12,8 +13,9 @@
     height: 150px;
   }
   .content__main-container {
+    width: 99%;
     display: flex;
-    .content__main-container__products-list {
+    .main-container__products-list {
       margin-left: 5vh;
       margin-top: 5vh;
       display: grid;
@@ -21,13 +23,13 @@
         border-color: #999999;
         border-radius: 5px;
       }
-      .content__main-container__products-list__underline{
+      .products-list__underline{
         margin-top: 5vh;
-        width: 150vh;
+        width: 90%;
         height: 2px;
         background-color: #999999;
       }
-      .content__main-container__products-list__products__product__card{
+      .product__card{
         display: flex;
         margin-top: 3vh;
         width: 90%;
@@ -35,20 +37,20 @@
         border-radius: 10px;
         padding: 10px;
         box-shadow: 0 0 10px #999999;
-        .content__main-container__products-list__products__product__card__buy{
+        .product__card__buy{
           margin: 2vh 0 0 5vh;
           text-align: right;
         }
-        .content__main-container__products-list__products__product__name{
+        .product__name{
           margin-left: 3vh;
           text-decoration: none;
           color: black;
           height: fit-content;
         }
-        .content__main-container__products-list__products__product__name:hover{
+        .product__name:hover{
           color: orange;
         }
-        .content__main-container__products-list__products__product__card__price{
+        .product__card__price{
           font-size: 21px;
         }
         .buyButton{
@@ -66,7 +68,8 @@
         }
       }
     }
-    .content__main-container__categories {
+    .main-container__categories {
+      margin-left: 12vh;
       width: 30vh;
       h3 {
         margin-left: 5vh;
@@ -75,13 +78,10 @@
         list-style-type: none;
         margin-top: 5px;
       }
-      .content__main-container__categories__listItem{
-
-      }
-      .content__main-container__categories__onSale{
+      .categories__onSale{
         display: flex;
       }
-      .content__main-container__categories__onSaleText {
+      .categories__onSaleText {
         font-size: 20px;
         margin-left: 5vh;
       }
@@ -89,18 +89,19 @@
   }
 }
 
-.content__main-container__categories__listItem:hover{
+.categories__listItem:hover{
   background-color: #D3D3D3;
 }
-.content__main-container__categories__switch {
+.categories__switch {
   margin-left: 5vh;
   position: relative;
   display: inline-block;
   width: 49px;
   height: 24px;
 }
-.content__main-container__categories__switch input {display:none;}
-
+.categories__switch input {
+  display:none;
+}
 .slider {
   z-index: -1;
   position: absolute;
