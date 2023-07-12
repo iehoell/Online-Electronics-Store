@@ -5,9 +5,9 @@ function Footer(){
         <footer>
             <div className="Footer">
                 <div className="Footer__footerContainers">
-                    <div className="Footer__footerContainers__company">
+                    <div className="footerContainers__company">
                         <h5>О компании</h5>
-                        <ul className="Footer__footerContainers__company__menu">
+                        <ul className="footerContainers__company-menu">
                             <li><a href="/about">О Компании</a></li>
                             <li><a href="/news">Новости</a></li>
                             <li><a href="/partners">Партнерам</a></li>
@@ -19,7 +19,7 @@ function Footer(){
                             <li><a href="/service-center">Сервисные центры</a></li>
                         </ul>
                     </div>
-                    <div className="Footer__footerContainers__buyers">
+                    <div className="footerContainers__buyers">
                         <h5>Покупателям</h5>
                         <ul>
                             <li><a href="/help">Как оформить заказ</a></li>
@@ -31,7 +31,7 @@ function Footer(){
                             <li><a href="/help">Проверка статуса ремонта</a></li>
                         </ul>
                     </div>
-                    <div className="Footer__footerContainers__connection">
+                    <div className="footerContainers__connection">
                         <h5>Как связаться</h5>
                         <p>8-800-800-88-88 (c 03:00 до 22:00)</p>
                         <p><a href="">Адреса магазинов г.Йошкар-Ола</a></p>
@@ -42,7 +42,7 @@ function Footer(){
                                        placeholder="Введите Email и подпишитесь" value=""></input>
                             </div>
                         </div>
-                        <p className="Footer__footerContainers__connection__licenseAgreement">
+                        <p className="connection__licenseAgreement">
                             Подписываясь на рассылку, Вы соглашаетесь
                             c условиями
                             <a href="/policy"> политики конфиденциальности </a>

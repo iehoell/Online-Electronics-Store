@@ -33,14 +33,17 @@
     margin: 0 5vh 0 5vh;
     display: flex;
     justify-content: space-around;
-    .Footer__footerContainers__company{
+    .footerContainers__company{
       width:33vh;
+      margin-top: 2vh;
     }
-    .Footer__footerContainers__buyers{
+    .footerContainers__buyers{
       width:33vh;
+      margin-top: 2vh;
     }
-    .Footer__footerContainers__connection{
+    .footerContainers__connection{
       width:33vh;
+      margin-top: 2vh;
       color: #999999;
       .text-field__icon {
         position: relative;
@@ -67,7 +70,7 @@
         outline: none;
         width: 103%;
       }
-      .Footer__footerContainers__connection__licenseAgreement{
+      .connection__licenseAgreement{
           font-size: 10px;
           a{
             color: #0D61AF;

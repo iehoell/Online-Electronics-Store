@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/modalBuy.scss'
+import '../styles/modalBuy.scss'
 
 const Modal = ({active, setActive, children}) => {
     return(

@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import './styles/productPage.scss'
-import MainParameters from './MainParameters';
-import Reviews from './Reviews';
-import Modal from './modalBuy';
+import MainParameters from './components/MainParameters';
+import Reviews from './components/Reviews';
+import Modal from './components/modalBuy';
 import CarouselBox from "./components/CarouselBox";
 import Graphic from "./components/Graphic";
+import favourites from './assets/favourites.png';
 
 let products = require('./mockData/products.json');
 
@@ -15,23 +16,41 @@ function ProductPage(){
             <h3>{products.product1.type + " " + products.product1.model}
             </h3>
           <div className="productPage__main-container">
-              <div className="productPage__main-container__photos">
+              <div className="main-container__photos">
                   <CarouselBox/>
               </div>
-              <div className="productPage__main-container__product-info">
+              <div className="main-container__product-info">
                 <p className="lastName">
                     [PCI-E 4.0 12 ГБ GDDR6, 192 бит, DisplayPort x3, HDMI, GPU 1320 МГц]
                 </p>
-                  <div className="productPage__main-container__product-info__infoAbout">
-                    <div className="productPage__main-container__product-info__price">
-                        <div className="productPage__main-container__product-info__priceBar">
+                  <div className="product-info__infoAbout">
+                    <div className="product-info__price">
+                        <div className="product-info__priceBar">
                             <h3>{products.product1.price}</h3>
-                            <button className="priceGraphic"><a href='#graphic' className='anchor'>гр</a></button>
+                            <button
+                                className="priceGraphic">
+                                <a
+                                    href='#graphic'
+                                    className='anchor'>
+                                    график
+                                </a>
+                            </button>
                         </div>
-                        <button className="favourites">3</button>
-                        <button id="buyButton" className="buyButton" onClick={() => setModalActive(true)}>Купить</button>
+                        <button
+                            className="favourites">
+                            <img
+                                className='favouritesImage'
+                                src={favourites}>
+                            </img>
+                        </button>
+                        <button
+                            id="buyButton"
+                            className="buyButton"
+                            onClick={() => setModalActive(true)}>
+                            Купить
+                        </button>
                     </div>
-                    <div className="productPage__main-container__product-info__price__delivery">
+                    <div className="product-info__price__delivery">
                       <div className="inStock"><p>В наличии: в 1 магазине</p></div>
                       <div className="pickUpPoints"><p>Пункты выдачи: доступны</p></div>
                       <div className="deliveryToHome"><p>Доставим на дом: сегодня</p></div>
