@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import './styles/productPage.scss'
-import MainParameters from './components/MainParameters';
-import Reviews from './components/Reviews';
-import Modal from './components/modalBuy';
-import CarouselBox from "./components/CarouselBox";
-import Graphic from "./components/Graphic";
-import favourites from './assets/favourites.png';
+import './productPage.scss'
+import MainParameters from './ProductPageComponents/MainParameters';
+import Reviews from './ProductPageComponents/Reviews';
+import Modal from '../ModalBuy/modalBuy';
+import CarouselBox from "./ProductPageComponents/CarouselBox";
+import Graphic from "./ProductPageComponents/Graphic";
+import favourites from '../../assets/favourites.png';
 
-let products = require('./mockData/products.json');
+let products = require('../../mockData/products.json');
 
 function ProductPage(){
     const [modalActive, setModalActive] = useState(true)

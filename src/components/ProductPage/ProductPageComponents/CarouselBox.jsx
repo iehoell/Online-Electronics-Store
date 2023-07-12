@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Carousel from "react-bootstrap/Carousel";
-import firstImage from '../assets/products/product1/firstImage.webp';
-import secondImage from '../assets/products/product1/secondImage.webp';
-import thirdImage from '../assets/products/product1/thirdImage.webp';
-import fourthImage from '../assets/products/product1/fourthImage.webp';
-import fifthImage from '../assets/products/product1/fifthImage.webp';
+import firstImage from '../../../assets/products/product1/firstImage.webp';
+import secondImage from '../../../assets/products/product1/secondImage.webp';
+import thirdImage from '../../../assets/products/product1/thirdImage.webp';
+import fourthImage from '../../../assets/products/product1/fourthImage.webp';
+import fifthImage from '../../../assets/products/product1/fifthImage.webp';
 
 class CarouselBox extends Component {
     render() {

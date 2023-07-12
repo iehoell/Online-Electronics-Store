@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import React, {useState} from 'react';
-import Modal from './components/modalBuy';
-import product1 from './assets/products/product1/product1.webp';
-import product2 from './assets/products/product2.webp';
-import product3 from './assets/products/product3.webp';
-import product4 from './assets/products/product4.webp';
-import product5 from './assets/products/product5.webp';
+import Modal from '../ModalBuy/modalBuy';
+import product1 from '../../assets/products/product1/product1.webp';
+import product2 from '../../assets/products/product2.webp';
+import product3 from '../../assets/products/product3.webp';
+import product4 from '../../assets/products/product4.webp';
+import product5 from '../../assets/products/product5.webp';
 
 
 function MainPage(){

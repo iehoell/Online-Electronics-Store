@@ -1,6 +1,6 @@
-import '../styles/productPage.scss'
+import '../productPage.scss'
 import React from 'react';
-let products = require('../mockData/products.json');
+let products = require('../../../mockData/products.json');
 
 function MainParameters(){
     return(

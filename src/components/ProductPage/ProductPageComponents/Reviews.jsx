@@ -1,5 +1,5 @@
 import React from 'react';
-let reviewers = require('../mockData/reviewers.json');
+let reviewers = require('../../../mockData/reviewers.json');
 function ProductPage() {
     return (
         <div>
