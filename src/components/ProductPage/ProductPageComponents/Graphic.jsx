@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, BarElement, Tooltip, Legend} from 'chart.js';
 import {Bar, Line} from 'react-chartjs-2';
+import productPage from '../productPage.module.scss';
 
 ChartJS.register(
     LineElement,
@@ -13,8 +14,6 @@ ChartJS.register(
 )
 
 function Graphic({active, setActive}) {
-    const [active1, setActive1] = useState('')
-    const [active2, setActive2] = useState('')
     const [value, setValue] = useState('')
     const options = [
         {label: 'Линейный', value: 1},
@@ -23,16 +22,16 @@ function Graphic({active, setActive}) {
     function handleSelect(event){
         setValue(event.target.value)
         if(event.target.value == 1){
-            l.classList.remove('hidden');
-            l.classList.add('visible');
-            b.classList.remove('visible');
-            b.classList.add('hidden');
+            l.classList.remove(productPage.hidden);
+            l.classList.add(productPage.visible);
+            b.classList.remove(productPage.visible);
+            b.classList.add(productPage.hidden);
         }
         if(event.target.value == 2){
-            b.classList.remove('hidden');
-            b.classList.add('visible');
-            l.classList.remove('visible');
-            l.classList.add('hidden');
+            b.classList.remove(productPage.hidden);
+            b.classList.add(productPage.visible);
+            l.classList.remove(productPage.visible);
+            l.classList.add(productPage.hidden);
         }
     }
     const dataBar = {
@@ -85,19 +84,19 @@ function Graphic({active, setActive}) {
     let b = document.getElementById('bar');
     return(
         <div>
-            <select className="graphicSelect" onChange={handleSelect}>
+            <select onChange={handleSelect}>
                 {options.map(option => (
                     <option value={option.value}>{option.label}</option>
                 ))}
             </select>
-            <div id='line' className={'visible'}>
+            <div id='line' className={productPage.visible}>
                 <Line
                     data = {dataLine}
                     options = {optionsLine}
                     style = {{padding: '20px', width: '200px'}}
                 />
             </div>
-            <div id='bar' className={'hidden'}>
+            <div id='bar' className={productPage.hidden}>
                 <Bar
                     data = {dataBar}
                     options = {optionsBar}

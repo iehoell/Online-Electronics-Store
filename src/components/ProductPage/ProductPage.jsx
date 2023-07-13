@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './productPage.scss'
+import productPage from './productPage.module.scss'
 import MainParameters from './ProductPageComponents/MainParameters';
 import Reviews from './ProductPageComponents/Reviews';
 import Modal from '../ModalBuy/modalBuy';
@@ -12,48 +12,49 @@ let products = require('../../mockData/products.json');
 function ProductPage(){
     const [modalActive, setModalActive] = useState(true)
     return(
-      <div className="ProductPage">
-            <h3>{products.product1.type + " " + products.product1.model}
+      <div className={productPage.ProductPage}>
+            <h3 className={productPage.mainTitle}>{products.product1.type + " " + products.product1.model}
             </h3>
-          <div className="productPage__main-container">
-              <div className="main-container__photos">
+          <div className={productPage.mainContainer}>
+              <div className={productPage.photos}>
                   <CarouselBox/>
               </div>
-              <div className="main-container__product-info">
-                <p className="lastName">
+              <div className={productPage.productInfo}>
+                <p className={productPage.lastName}>
                     [PCI-E 4.0 12 ГБ GDDR6, 192 бит, DisplayPort x3, HDMI, GPU 1320 МГц]
                 </p>
-                  <div className="product-info__infoAbout">
-                    <div className="product-info__price">
-                        <div className="product-info__priceBar">
+                  <div className={productPage.infoAbout}>
+                    <div className={productPage.price}>
+                        <div className={productPage.priceBar}>
                             <h3>{products.product1.price}</h3>
                             <button
-                                className="priceGraphic">
+                                className={productPage.priceGraphic}>
                                 <a
                                     href='#graphic'
-                                    className='anchor'>
+                                    className={productPage.anchor}>
                                     график
                                 </a>
                             </button>
                         </div>
                         <button
-                            className="favourites">
+                            className={productPage.favourites}>
                             <img
-                                className='favouritesImage'
-                                src={favourites}>
+                                className={productPage.favouritesImage}
+                                src={favourites}
+                                alt='картинка добавления в корзину'>
                             </img>
                         </button>
                         <button
                             id="buyButton"
-                            className="buyButton"
+                            className={productPage.buyButton}
                             onClick={() => setModalActive(true)}>
                             Купить
                         </button>
                     </div>
-                    <div className="product-info__price__delivery">
-                      <div className="inStock"><p>В наличии: в 1 магазине</p></div>
-                      <div className="pickUpPoints"><p>Пункты выдачи: доступны</p></div>
-                      <div className="deliveryToHome"><p>Доставим на дом: сегодня</p></div>
+                    <div className={productPage.delivery}>
+                      <div className={productPage.inStock}><p>В наличии: в 1 магазине</p></div>
+                      <div className={productPage.pickUpPoints}><p>Пункты выдачи: доступны</p></div>
+                      <div className={productPage.deliveryToHome}><p>Доставим на дом: сегодня</p></div>
                     </div>
                   </div>
               </div>
@@ -64,7 +65,7 @@ function ProductPage(){
           <h5>Характеристики {products.product1.type} {products.product1.model} {products.product1.code}</h5>
           <MainParameters />
           <h5>Описание</h5>
-          <div className="productPage__description">
+          <div className={productPage.description}>
               <p id="description">
                   {products.product1.description}
               </p>

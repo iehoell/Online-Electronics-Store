@@ -1,10 +1,13 @@
 import React from 'react';
+import productPage from '../productPage.module.scss';
+
 let reviewers = require('../../../mockData/reviewers.json');
+
 function ProductPage() {
     return (
         <div>
             <h5>Отзывы</h5>
-            <div className='reviewsContainer'>
+            <div className={productPage.reviewsContainer}>
                 <div className='review1'>
                     <h6>{reviewers.reviewer1.name}</h6>
                     <b>Общая оценка</b>
@@ -24,7 +27,7 @@ function ProductPage() {
                     <b>Комментарий</b>
                     <p>{reviewers.reviewer1.comment}</p>
                 </div>
-                <div className='underline'></div>
+                <div className={productPage.underline}></div>
                 <div className='review2'>
                     <h6>{reviewers.reviewer2.name}</h6>
                     <b>Общая оценка</b>

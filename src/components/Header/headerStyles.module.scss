@@ -16,28 +16,28 @@
   a:hover{
     color: white;
   }
-  .header__productTitle{
+  .productTitle{
     margin: 14px 5px 20px 5px;
   }
-  .header__telephoneNumber{
+  .telephoneNumber{
     margin: 14px 5px 20px 5px;
   }
-  .header__telephoneNumber:hover{
+  .telephoneNumber:hover{
     color: white;
   }
-    .header__typesOfProducts{
+    .typesOfProducts{
       display: flex;
       justify-content: space-between;
-        .typesOfProducts__production{
+        .production{
           margin: 14px 5px 20px 5px;
         }
-        .typesOfProducts__PCs{
+        .PCs{
           margin: 14px 5px 20px 5px;
         }
-        .typesOfProducts__mobileDevices{
+        .mobileDevices{
           margin: 14px 5px 20px 5px;
         }
-        .typesOfProducts__consoles{
+        .consoles{
           margin: 14px 5px 20px 5px;
         }
     }
