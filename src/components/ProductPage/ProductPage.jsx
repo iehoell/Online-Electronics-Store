@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import productPage from './productPage.module.scss'
 import MainParameters from './ProductPageComponents/MainParameters';
-import Reviews from './ProductPageComponents/Reviews';
+import Reviews from './ProductPageComponents/Reviews/Reviews';
 import Modal from '../ModalBuy/modalBuy';
-import CarouselBox from "./ProductPageComponents/CarouselBox";
+import CarouselBox from "./ProductPageComponents/Carousel/CarouselBox";
 import Graphic from "./ProductPageComponents/Graphic";
 import favourites from '../../assets/favourites.png';
 
