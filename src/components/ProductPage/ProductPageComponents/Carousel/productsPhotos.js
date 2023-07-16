@@ -1,3 +1,6 @@
+import React from "react";
+import { Carousel, CarouselItem } from "react-bootstrap";
+
 const productsData = [
     {
         id: 1,
@@ -21,4 +24,20 @@ const productsData = [
     },
 ]
 
-export default productsData;
+function CarouselPhotos(){
+    return(
+        <Carousel>
+            {productsData.map(productsData => (
+            <CarouselItem key={productsData.id}>
+                <img
+                    className='d-block w-400px'
+                    src={productsData.src}
+                    alt='image'
+                />
+            </CarouselItem>
+            ))}
+        </Carousel>
+    );
+}
+
+export default CarouselPhotos;
