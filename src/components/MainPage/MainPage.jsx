@@ -2,39 +2,25 @@ import React, {useState} from 'react';
 import Modal from '../ModalBuy/modalBuy';
 import mainPage from './MainPage.module.scss';
 import ProductCards from "./productCards/ProductCards";
+import CategoriesList from "./CategoriesList";
+import Selector from "./Selector";
+import categoriesData from "../../mockData/categoriesData";
 import productCardsData from "../../mockData/productCardsData";
+import selectorData from "../../mockData/selectorData";
 
 function MainPage(){
     const [modalActive, setModalActive] = useState(true)
     const slider = mainPage.slider + ' ' + mainPage.round;
     const cardsComponents = productCardsData.map(cards => <ProductCards key={cards.id} price={cards.price} type={cards.type} model={cards.model} code={cards.code} color={cards.color} src={cards.src}/>)
+    const categoriesListComponents = categoriesData.map(categories => <CategoriesList key={categories.id} text={categories.text}/>)
+    const selectorComponents = selectorData.map(options => <Selector key={options.key} text={options.key} value={options.value}/>)
     return(
         <div className={mainPage.MainPage}>
             <div className={mainPage.mainContainer}>
                 <div className={mainPage.categories}>
                     <h3>Категория</h3>
                     <ul>
-                        <li className={mainPage.listItem}>
-                            <a className={mainPage.categoriesItem}
-                                href="/">
-                                Все категории
-                            </a>
-                        </li>
-                        <li className={mainPage.listItem}>
-                            <a className={mainPage.categoriesItem} href="/">
-                                Комплектующие для ПК
-                            </a>
-                        </li>
-                        <li className={mainPage.listItem}>
-                            <a className={mainPage.categoriesItem} href="/">
-                                Мобильные устройства
-                            </a>
-                        </li>
-                        <li className={mainPage.listItem}>
-                            <a className={mainPage.categoriesItem} href="/">
-                                Приставки
-                            </a>
-                        </li>
+                        {categoriesListComponents}
                     </ul>
                     <div className={mainPage.onSale}>
                         <b className={mainPage.onSaleText}>
@@ -49,10 +35,7 @@ function MainPage(){
                 <div className={mainPage.productsList}>
                     <div>
                         <select className={mainPage.sortingSelect}>
-                            <option selected value="Популярные">Популярные</option>
-                            <option value="По скидке (%)">По скидке (%)</option>
-                            <option value="Сначала недорогие">Сначала недорогие</option>
-                            <option value="Сначала дорогие">Сначала дорогие</option>
+                            {selectorComponents}
                         </select>
                     </div>
                     <div className={mainPage.underline}></div>

@@ -6,14 +6,14 @@ import Modal from '../ModalBuy/modalBuy';
 import CarouselBox from "./ProductPageComponents/Carousel/CarouselBox";
 import Graphic from "./ProductPageComponents/Graphic";
 import favourites from '../../assets/favourites.png';
-
-let products = require('../../mockData/products.json');
+import productCardsData from '../../mockData/productCardsData'
+import products from '../../mockData/productCardsData';
 
 function ProductPage(){
     const [modalActive, setModalActive] = useState(true)
     return(
       <div className={productPage.ProductPage}>
-            <h3 className={productPage.mainTitle}>{products.product1.type + " " + products.product1.model}
+            <h3 className={productPage.mainTitle}>{products[0].type + " " + products[0].model}
             </h3>
           <div className={productPage.mainContainer}>
               <div className={productPage.photos}>
@@ -26,7 +26,7 @@ function ProductPage(){
                   <div className={productPage.infoAbout}>
                     <div className={productPage.price}>
                         <div className={productPage.priceBar}>
-                            <h3>{products.product1.price}</h3>
+                            <h3>{products[0].price}</h3>
                             <button
                                 className={productPage.priceGraphic}>
                                 <a
@@ -62,12 +62,12 @@ function ProductPage(){
           <h5 id='graphic'>График изменения цен на товар</h5>
           <p>Выберите тип графика: </p>
           <Graphic/>
-          <h5>Характеристики {products.product1.type} {products.product1.model} {products.product1.code}</h5>
+          <h5>Характеристики {products[0].type} {products[0].model} {products[0].code}</h5>
           <MainParameters />
           <h5>Описание</h5>
           <div className={productPage.description}>
               <p id="description">
-                  {products.product1.description}
+                  {products[0].description}
               </p>
           </div>
           <Reviews />
