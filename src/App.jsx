@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import MainPage from './MainPage';
-import ProductPage from './ProductPage';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import MainPage from './components/MainPage/MainPage';
+import ProductPage from './components/ProductPage/ProductPage';
 
 function App() {
     return (
